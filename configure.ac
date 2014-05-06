@@ -1,0 +1,14 @@
+AC_INIT([foo],[20140506-1557.0],[rcs@xiphos.ca])
+AC_CONFIG_MACRO_DIR([m4])
+AM_INIT_AUTOMAKE([foreign -Wall -Werror subdir-objects])
+AC_SUBST(LIBDIR)
+AC_PROG_CC
+AM_PROG_CC_C_O
+LT_INIT
+AC_C_BIGENDIAN
+
+AC_LANG_WERROR
+AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_FILES([Makefile src/Makefile])
+
+AC_OUTPUT
